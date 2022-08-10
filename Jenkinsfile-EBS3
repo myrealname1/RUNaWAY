@@ -18,7 +18,7 @@ pipeline {
 		stage('Build') {
 
 			steps {
-				sh 'docker build -t emansal/RunWay:latest .'
+				sh 'docker build -t emansal/runaway:latest .'
 			}
 		}
 
@@ -32,7 +32,7 @@ pipeline {
 		stage('Push') {
 
 			steps {
-				sh 'docker push emansal/RunWay:latest'
+				sh 'docker push emansal/runaway:latest'
 			}
 		}
 
