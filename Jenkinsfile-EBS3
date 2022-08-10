@@ -8,8 +8,8 @@ pipeline {
         AWS_SECRET_ACCESS_KEY = credentials('eman-aws-secret-access-key')
 		ARTIFACT_NAME = 'Dockerrun.aws.json'
 		AWS_S3_BUCKET = 'eman-belt2d2-artifacts-123456'
-		AWS_EB_APP_NAME = 'online-runway-cicd'
-        AWS_EB_ENVIRONMENT_NAME = 'Onlinerunwaycicd-env'
+		AWS_EB_APP_NAME = 'online-runway-eman'
+        AWS_EB_ENVIRONMENT_NAME = 'Onlinerunwayeman-env'
         AWS_EB_APP_VERSION = "${BUILD_ID}"
 	}
 
