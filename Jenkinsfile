@@ -3,7 +3,7 @@ pipeline{
 	agent any
 
 	environment {
-		DOCKERHUB_CREDENTIALS=credentials('hanansalem88-dockerhub')
+		DOCKERHUB_CREDENTIALS=credentials('emansal-dockerhub')
 	}
 
 	stages {
@@ -11,7 +11,7 @@ pipeline{
 		stage('Build') {
 
 			steps {
-				sh 'docker build -t hanansalem88/RunWay:latest .'
+				sh 'docker build -t emansal/RunWay:latest .'
 			}
 		}
 
@@ -25,7 +25,7 @@ pipeline{
 		stage('Push') {
 
 			steps {
-				sh 'docker push hanansalem88/RunWay:latest'
+				sh 'docker push emansal/RunWay:latest'
 			}
 		}
 	}
