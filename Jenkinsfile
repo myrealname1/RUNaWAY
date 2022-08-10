@@ -3,7 +3,7 @@ pipeline{
 	agent any
 
 	environment {
-		DOCKERHUB_CREDENTIALS=credentials('emansal-dockerhub')
+		DOCKERHUB_CREDENTIALS=credentials('eman-dockerhub-token')
 	}
 
 	stages {
